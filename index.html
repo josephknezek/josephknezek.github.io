@@ -25,6 +25,23 @@
     </head>
 
     <script>
+        let inputs = []
+        let konami = [38, 38, 40, 40, 37, 39, 37, 39, 98, 97]
+
+        function GetInput(evt)
+        {
+            const charCode = evt.keyCode || evt.which;
+            inputs.push(charCode);
+
+            if (inputs.length > 10)
+                inputs.shift();
+
+            let codeEntered = array1.every((value, index) => value === konami[index]);
+
+            if (codeEntered)
+                document.body.style.backgroundImage = "Resources/Gifs/fnaf-freddy.gif";
+        }
+
         function ChangeGifOfID(id, freddy)
         {
             if (freddy)
@@ -33,18 +50,16 @@
                 document.getElementById(id).src = "Resources/Gifs/nice.gif";
         }
 
-        document.onkeydown = function(evt)   {
+        document.onkeydown = function(evt) {
             evt = evt || window.event;
-            var charCode = evt.keyCode || evt.which;
-            var charStr = String.fromCharCode(charCode);
-            alert(charStr);
+            GetInput(evt);
         }
     </script>
 
     <body>
         <h1>Yee website</h1>
         <hr>
-        <p>Fredrick.</p>
+        <p>I really like Konami games.</p>
         <div class="grid-container">
             <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy1" onmouseover="ChangeGifOfID('freddy1', false)" onmouseleave="ChangeGifOfID('freddy1', true)"></div>
             <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy2" onmouseover="ChangeGifOfID('freddy2', false)" onmouseleave="ChangeGifOfID('freddy2', true)"></div>
