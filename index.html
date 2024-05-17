@@ -24,19 +24,29 @@
         </style>
     </head>
 
+    <script>
+        function ChangeGifOfID(id, freddy)
+        {
+            if (freddy)
+                document.getElementById(id).src = "Resources/Gifs/fnaf-freddy.gif";
+            else
+                document.getElementById(id).src = "Resources/Gifs/nice.gif";
+        }
+    </script>
+
     <body>
         <h1>Yee website</h1>
         <hr>
         <p>This is big wip.</p>
         <div class="grid-container">
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
-            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy1" onmouseover="ChangeGifOfID('freddy1', false)" onmouseleave="ChangeGifOfID('freddy1', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy2" onmouseover="ChangeGifOfID('freddy2', false)" onmouseleave="ChangeGifOfID('freddy2', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy3" onmouseover="ChangeGifOfID('freddy3', false)" onmouseleave="ChangeGifOfID('freddy3', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy4" onmouseover="ChangeGifOfID('freddy4', false)" onmouseleave="ChangeGifOfID('freddy4', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy5" onmouseover="ChangeGifOfID('freddy5', false)" onmouseleave="ChangeGifOfID('freddy5', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy6" onmouseover="ChangeGifOfID('freddy6', false)" onmouseleave="ChangeGifOfID('freddy6', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy7" onmouseover="ChangeGifOfID('freddy7', false)" onmouseleave="ChangeGifOfID('freddy7', true)"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy8" onmouseover="ChangeGifOfID('freddy8', false)" onmouseleave="ChangeGifOfID('freddy8', true)"></div>
         </div>
         <br>
         <button onclick="document.location='/Pages/Page2.html'">Test Button</button>
