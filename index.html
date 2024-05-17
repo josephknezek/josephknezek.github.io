@@ -33,6 +33,8 @@
             const charCode = evt.keyCode || evt.which;
             inputs.push(charCode);
 
+            alert("You pressed key " + charCode);
+
             if (inputs.length > 10)
                 inputs.shift();
 
