@@ -36,12 +36,15 @@
             if (inputs.length > 10)
                 inputs.shift();
 
+            if (inputs.length < 10)
+                return;
+
             let codeEntered = inputs.every((value, index) => value === konami[index]);
 
             if (codeEntered)
             {
+                document.body.style.backgroundImage = url("Resources/Gifs/fnaf-freddy.gif");
                 alert("Freddy!");
-                document.body.style.backgroundImage = "Resources/Gifs/fnaf-freddy.gif";
             }
         }
 
