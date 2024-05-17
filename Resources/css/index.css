@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'LDF Comic Sans';
-    src: url('Resources/Fonts/Ldfcomicsans.ttf') format('truetype');
+    src: url('/Resources/Fonts/Ldfcomicsans.ttf') format('truetype');
 }
 
 body {
