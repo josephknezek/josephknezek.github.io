@@ -36,10 +36,8 @@
             if (inputs.length > 10)
                 inputs.shift();
 
-            if (inputs.length < 10)
-                return;
-
-            let codeEntered = inputs.every((value, index) => value === konami[index]);
+            alet("trying to get " + konami + "\nHave " + inputs);
+            let codeEntered = konami.every((value, index) => value === inputs[index]);
 
             if (codeEntered)
             {
