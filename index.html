@@ -2,6 +2,26 @@
 <html>
     <head>
         <link href="/Resources/css/index.css" type="text/css" rel="stylesheet">
+        <style>
+            .grid-container
+            {
+                display: grid;
+                column-gap: 20px;
+                row-gap: 5px;
+                grid-template-columns: auto auto auto auto;
+                background-color: blue;
+                padding: 10px;
+            }
+
+            .grid-item
+            {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
     </head>
 
     <body>
@@ -9,6 +29,17 @@
         <hr>
         <p>This is a test.</p>
         <p>This is more text.</p>
+        <div class="grid-container">
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+            <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif"></div>
+        </div>
+        <br>
         <button onclick="document.location='/Pages/Page2.html'">Test Button</button>
     </body>
 </html>

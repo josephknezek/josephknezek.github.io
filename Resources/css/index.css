@@ -1,3 +1,12 @@
-body    {background-color:aliceblue;}
-h1      {color:black}
-p       {color: black}
+body {
+    background-color:aliceblue;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive;
+    color:black
+}
+
+p {
+    color: black;
+}
