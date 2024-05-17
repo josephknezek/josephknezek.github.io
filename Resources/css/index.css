@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-family: 'LDF Comic Sans', serif;
+    font-family: 'LDF Comic Sans', 'Courier New', Courier, monospace;
     color:black
 }
 
