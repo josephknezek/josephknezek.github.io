@@ -4,22 +4,10 @@
         <link href="Resources/css/index.css" type="text/css" rel="stylesheet">
     </head>
 
-    <script>
-        function CreateButton(text, onClick)
-        {
-            const button = document.createElement('button');
-            button.textContent = text;
-            button.addEventListener('click', onClick);
-            return button;
-        }
-    </script>
-
     <body>
         <h1>Hello World</h1>
         <p>This is a test.</p>
         <p>This is more text.</p>
-        <script>
-            CreateButton("Script button power!!", () =>{document.location='/Pages/Page2.html'})
-        </script>
+        <button onclick="document.location='/Pages/Page2.html'">Test Button</button>
     </body>
 </html>
