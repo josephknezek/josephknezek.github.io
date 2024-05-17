@@ -1,12 +1,14 @@
+@font-face {
+    font-family: 'LDF Comic Sans';
+    src: url('Resources/Fonts/Ldfcomicsans.ttf') format('truetype');
+}
+
 body {
     background-color:aliceblue;
 }
 
 h1 {
-    @font-face {
-        font-family: 'Comic Sans';
-        src: url('Resources/Fonts/Ldfcomicsans.ttf') format('truetype');
-    }
+    font-family: 'LDF Comic Sans', sans-serif;
     color:black
 }
 
