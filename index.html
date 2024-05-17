@@ -36,14 +36,10 @@
             if (inputs.length > 10)
                 inputs.shift();
 
-            alert(inputs)
-            let codeEntered = array1.every((value, index) => value === konami[index]);
+            let codeEntered = inputs.every((value, index) => value === konami[index]);
 
             if (codeEntered)
-            {
-                alert("YOU GOT IT!")
                 document.body.style.backgroundImage = "Resources/Gifs/fnaf-freddy.gif";
-            }
         }
 
         function ChangeGifOfID(id, freddy)
