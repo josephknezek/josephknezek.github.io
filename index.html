@@ -26,14 +26,12 @@
 
     <script>
         let inputs = []
-        let konami = [38, 38, 40, 40, 37, 39, 37, 39, 98, 97]
+        let konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
         function GetInput(evt)
         {
             const charCode = evt.keyCode || evt.which;
             inputs.push(charCode);
-
-            alert("You pressed key " + charCode);
 
             if (inputs.length > 10)
                 inputs.shift();
@@ -61,7 +59,7 @@
     <body>
         <h1>Yee website</h1>
         <hr>
-        <p>I really like Konami games.</p>
+        <p>I really like Konami games. And cheat codes.</p>
         <div class="grid-container">
             <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy1" onmouseover="ChangeGifOfID('freddy1', false)" onmouseleave="ChangeGifOfID('freddy1', true)"></div>
             <div class="grid-item"><img src="Resources/Gifs/fnaf-freddy.gif" id="freddy2" onmouseover="ChangeGifOfID('freddy2', false)" onmouseleave="ChangeGifOfID('freddy2', true)"></div>
