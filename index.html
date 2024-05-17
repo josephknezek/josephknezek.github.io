@@ -25,26 +25,26 @@
     </head>
 
     <script>
-        let inputs = []
-        let konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+        let inputs = [];
+        const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
-        function GetInput(evt)
-        {
+        function GetInput(evt) {
             const charCode = evt.keyCode || evt.which;
             inputs.push(charCode);
 
             if (inputs.length > 10)
                 inputs.shift();
 
-            alert("trying to get " + konami + "\nHave " + inputs);
-            let codeEntered = konami.every((value, index) => value === inputs[index]);
+            console.log("trying to get " + konami + "\nHave " + inputs);
+            
+            let lastTenInputs = inputs.slice(-10);
+            let codeEntered = lastTenInputs.join() === konami.join();
 
-            if (codeEntered)
-            {
-                document.body.style.backgroundImage = url("Resources/Gifs/fnaf-freddy.gif");
+            if (codeEntered) {
+                document.body.style.backgroundImage = "url('Resources/Gifs/fnaf-freddy.gif')";
                 document.body.style.backgroundSize = "cover";
                 document.body.style.backgroundRepeat = "no-repeat";
-                alert("Freddy!");
+                console.log("Freddy!");
             }
         }
 
